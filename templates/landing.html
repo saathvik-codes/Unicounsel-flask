@@ -13,7 +13,7 @@
         <div class="hero-carousel">
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="https://images.pexels.com/photos/7973206/pexels-photo-7973206.jpeg" alt="Students walking on campus - Photo by George Pak on Pexels">
+                    <img src="{{ url_for('static', filename='img/uc-hero.webp') }}" alt="Drawing of university buildings from several countries, joined by a flight path">
                     <div class="carousel-overlay"></div>
                     <div class="carousel-content">
                         <h1 class="carousel-title">Your Dream University Awaits</h1>
@@ -229,10 +229,10 @@
                 <p>Every tool below works from your own profile, so nothing here is generic advice.</p>
             </div>
             <ol class="how-steps">
-                <li><span class="how-no">01</span><h3>Build your profile</h3><p>Add your scores, budget and target country once. The rest of the app reads from it.</p></li>
-                <li><span class="how-no">02</span><h3>Explore on the map</h3><p>Filter universities by country, fees and ranking, then save the ones worth a closer look.</p></li>
-                <li><span class="how-no">03</span><h3>Compare costs and visa odds</h3><p>See tuition and living costs side by side, and a visa-probability estimate for each shortlist.</p></li>
-                <li><span class="how-no">04</span><h3>Prepare your documents</h3><p>Track your SOP, recommendations and deadlines in one checklist.</p></li>
+                <li><img class="how-art" src="{{ url_for('static', filename='img/uc-how-profile.webp') }}" alt="" width="104" height="104" loading="lazy"><span class="how-no">01</span><h3>Build your profile</h3><p>Add your scores, budget and target country once. The rest of the app reads from it.</p></li>
+                <li><img class="how-art" src="{{ url_for('static', filename='img/uc-how-map.webp') }}" alt="" width="104" height="104" loading="lazy"><span class="how-no">02</span><h3>Explore on the map</h3><p>Filter universities by country, fees and ranking, then save the ones worth a closer look.</p></li>
+                <li><img class="how-art" src="{{ url_for('static', filename='img/uc-how-compare.webp') }}" alt="" width="104" height="104" loading="lazy"><span class="how-no">03</span><h3>Compare costs and visa odds</h3><p>See tuition and living costs side by side, and a visa-probability estimate for each shortlist.</p></li>
+                <li><img class="how-art" src="{{ url_for('static', filename='img/uc-how-documents.webp') }}" alt="" width="104" height="104" loading="lazy"><span class="how-no">04</span><h3>Prepare your documents</h3><p>Track your SOP, recommendations and deadlines in one checklist.</p></li>
             </ol>
         </section>
 
