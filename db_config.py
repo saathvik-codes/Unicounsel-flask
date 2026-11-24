@@ -2,8 +2,14 @@ import sqlite3
 import os
 from pathlib import Path
 
-# SQLite database path
-DB_DIR = Path(__file__).parent
+# SQLite database path. Serverless hosts (Vercel) only allow writes under /tmp, so use it there.
+_APP_DIR = Path(__file__).parent
+if os.environ.get('SQLITE_DIR'):
+    DB_DIR = Path(os.environ['SQLITE_DIR'])
+elif os.environ.get('VERCEL') or not os.access(_APP_DIR, os.W_OK):
+    DB_DIR = Path('/tmp')
+else:
+    DB_DIR = _APP_DIR
 DB_NAME = os.environ.get('SQLITE_DATABASE', 'unicounsel_db.sqlite')
 DB_PATH = DB_DIR / DB_NAME
 
