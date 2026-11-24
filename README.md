@@ -1,8 +1,8 @@
-# 🎓 UniCounsel - University Matching Platform
+# UniCounsel - University Matching Platform
 
 A complete Flask-based web application for matching students with perfect universities based on their preferences, with AI-powered recommendations.
 
-## 📋 Quick Setup Guide
+## Quick Setup Guide
 
 ### Prerequisites
 - Python 3.8+
@@ -60,9 +60,9 @@ python setup.py
 ```
 
 This will:
-- ✅ Create the `unicounsel_db` database
-- ✅ Create all necessary tables
-- ✅ Load university data from CSV files
+- Create the `unicounsel_db` database
+- Create all necessary tables
+- Load university data from CSV files
 
 ---
 
@@ -85,9 +85,9 @@ Navigate to: **http://localhost:5000**
 
 ---
 
-## 🚀 Features
+## Features
 
-### ✨ Implemented Features
+### Implemented Features
 
 1. **User Authentication**
    - Email/Password signup & login
@@ -129,7 +129,7 @@ Navigate to: **http://localhost:5000**
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 uni_flask/
@@ -165,7 +165,7 @@ uni_flask/
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -188,7 +188,7 @@ Edit `db_config.py` to change:
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /login` - User login
@@ -213,7 +213,7 @@ Edit `db_config.py` to change:
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 ### Users Table
 ```sql
@@ -267,7 +267,7 @@ Edit `db_config.py` to change:
 
 ---
 
-## 🎨 UI/UX Features
+## UI/UX Features
 
 - **Modern Dark Theme** - Sleek, professional appearance
 - **Responsive Design** - Works on desktop, tablet, mobile
@@ -279,7 +279,7 @@ Edit `db_config.py` to change:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "Access denied for user 'root'@'localhost'"
 
@@ -315,7 +315,7 @@ python setup.py
 
 ---
 
-## 📊 University Data
+## University Data
 
 The app comes with university data from:
 - **Argentina** (50+ universities)
@@ -334,7 +334,7 @@ Data is automatically loaded into MySQL when you run `setup.py`
 
 ---
 
-## 🔐 Security Notes
+## Security Notes
 
 - Passwords are hashed with SHA-256
 - Google OAuth for secure authentication
@@ -342,7 +342,7 @@ Data is automatically loaded into MySQL when you run `setup.py`
 - CSRF protection ready
 - SQL injection prevention via parameterized queries
 
-**⚠️ For production:**
+**For production:**
 - Change `app.secret_key` to a secure random value
 - Use environment variables for all secrets
 - Enable HTTPS
@@ -351,7 +351,7 @@ Data is automatically loaded into MySQL when you run `setup.py`
 
 ---
 
-## 📱 User Flow
+## User Flow
 
 ```
 Landing Page
@@ -369,7 +369,7 @@ Select & Shortlist Universities
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 After setup, you can:
 
@@ -382,13 +382,13 @@ After setup, you can:
 
 ---
 
-## 📞 Support
+## Support
 
 For detailed MySQL setup help, see: [MYSQL_SETUP.md](./MYSQL_SETUP.md)
 
 ---
 
-## 🎯 Features Coming Soon
+## Features Coming Soon
 
 - Interview preparation trainer
 - Scholarship finder tools
@@ -402,10 +402,10 @@ For detailed MySQL setup help, see: [MYSQL_SETUP.md](./MYSQL_SETUP.md)
 
 ---
 
-## 📄 License
+## License
 
 This project is part of the UniCounsel platform.
 
 ---
 
-**Happy university hunting! 🎓✨**
+**Happy university hunting! **
