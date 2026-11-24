@@ -937,5 +937,5 @@ main {
 .how-steps h3 { font-size: 1.1rem; font-weight: 600; color: #f1f5f9; margin: 0 0 0.5rem; }
 .how-steps p { color: #94a3b8; line-height: 1.6; margin: 0; font-size: 0.97rem; }
 
-/* Step drawings sit on a paper tile so their dark ink stays readable on the dark page */
-.how-art { display: block; width: 104px; height: 104px; object-fit: contain; margin: 0 0 1rem; padding: 8px; background: #f4eee2; border-radius: 8px; }
+/* Step drawings are dark ink on transparent: flip lightness (keeping hue) so they sit directly on the dark page */
+.how-art { display: block; width: 112px; height: 112px; object-fit: contain; margin: 0 0 1rem; filter: invert(0.92) hue-rotate(180deg); }
